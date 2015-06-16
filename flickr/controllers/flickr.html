@@ -1,0 +1,14 @@
+<ion-view view-title="Ionic Flickr">
+    <ion-content class="has-header">
+     <ion-refresher pulling-text="Pull to refresh" on-refresh="vm.doRefresh()">
+    </ion-refresher>
+     <ion-list>
+        <ion-item class="item-icon-left item-text-wrap" ng-repeat="album in vm.photoList" ng-click="vm.openAlbum(album.id)" >
+        <i class="icon ion-record positive"></i>
+        {{album.title['_content']}}
+        </ion-item>
+     </ion-list>
+    </ion-content>
+</ion-view>
+
+<!--  -->
