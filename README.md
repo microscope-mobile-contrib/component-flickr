@@ -1,10 +1,11 @@
-# microscope-component-contact
+# microscope-component-flickr
 This is an addon starter component for the Ionic Framework.
 
-## Dependencies
-### Cordova Plugin
+## Features
 
- - cordova-plugin-contacts
+ - List photosets
+ - List photos
+ - Pull to refresh
 
 ## How to use this template
 
@@ -14,22 +15,30 @@ To use this, add the component using the microscope-mobile node.js utility, or c
 
 Add angular module :
 
-     require('./components/contact/contact');
+     require('./components/flickr/flickr');
      
      // application definition
      var app = angular.module('app', [
-     	'app.contact'
+     	'app.flickr'
      ]);
      
 Add route :
 
     $stateProvider
-      .state('app.contact', {
-        url: '/contact',
+      .state('app.flickr', {
+        url: '/flickr',
         views: {
           'menuContent': {
-            templateUrl: 'components/contact/controllers/camera.html',
-            controller: 'ContactCtrl as vm'
+            templateUrl: 'components/flickr/controllers/flickr.html',
+            controller: 'FlickrCtrl as vm'
+          }
+        }
+    }).state('app.album', {
+        url: '/album',
+        views: {
+          'menuContent': {
+            templateUrl: 'components/flickr/controllers/album.html',
+            controller: 'AlbumCtrl as vm'
           }
         }
     });
