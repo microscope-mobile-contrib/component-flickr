@@ -13,6 +13,15 @@ This is an addon starter component for the Ionic Framework.
 
 To use this, add the component using the microscope-mobile node.js utility, or copy and paste this into an existing Cordova project and download a release of Ionic separately.
 
+Set your API key and userId in the FlickrService : 
+
+     this.Flickr_data = {
+      key: 'apikey',
+      user_id: 'userid',
+      endpoint: 'https://api.flickr.com/services/rest/'
+     };
+
+
 Add angular module :
 
      require('./components/flickr/flickr');
