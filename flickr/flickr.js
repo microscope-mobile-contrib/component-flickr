@@ -4,7 +4,7 @@
 var angular = require('angular');
 
 var FlickrCtrl  = require('./controllers/flickrCtrl');
-var AlbumCtrl  = require('./controllers/AlbumCtrl');
+var AlbumCtrl  = require('./controllers/albumCtrl');
 var FlickrService  = require('./services/flickrService');
 
 // Camera sub-module definition
